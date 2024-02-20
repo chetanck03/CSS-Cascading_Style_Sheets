@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* 1) ELEMENT SELECTORS */
+        div{
+            background-color: brown;
+        }
+        /* 2) CLASS SELECTOR */
+        .red{
+            background-color: aqua;
+
+        }
+
+        /* 3) ID SELECTOR   */
+        #yellow{
+            background-color: blueviolet;
+        }
+
+        /* 4) CHILD SELECTORS : direct p under the div*/
+        div > p{
+            color: aquamarine;
+            background-color: rgb(91, 19, 139);
+        }
+        /* 5) DESCENDANT SELECTOR */
+        div article{
+            color: yellow;
+            background-color:black;
+        }
+        /* 6) UNIVERSAL SELECTOR */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        /* 7) PSEUDO SELECTOR */
+        a:visited{
+            color: rgb(25, 129, 51);
+        }
+
+        a:link{
+            color: rgb(202, 31, 159);
+        }
+
+
+        /* when click color change  */
+        a:active{
+            background-color: black;
+        }
+
+        a:hover{
+            background-color: blueviolet;
+        }
+
+        P:first-child{
+            background-color: rgb(206, 119, 12);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        i am div
+    </div>
+
+    <div class="red">
+        hi everyone
+    </div>
+
+    <div id="yellow">
+        hlo
+        <p> I AM PARA INSIDE THE DIV</p>
+        <article>hi chetan</article>
+    </div>
+
+    <a href="https://www.google.com">GO TO GOOGLE</a>
+
+    <div class="one">
+
+        <p>I AM FIRST</p>
+        <p>I AM SECOND</p>
+    
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* px = pixel
+        vw = view port width */
+
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aqua;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+
+            /* font-size: 18px; */
+            margin: 23px auto;
+            background-color: aqua;
+
+        }
+        .container p{
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid red;
+            /* parent height for percentage */
+        }
+
+        /* html{
+            font-size: 35px;
+        } */
+
+        .mycount{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: 23px auto;
+            font-size: 22px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla numquam maiores excepturi eius ea ut molestiae ratione, tenetur quasi non modi porro corrupti consectetur tempora voluptas ipsa debitis nesciunt sit adipisci quam laudantium delectus facere ex! Ducimus, dolorum officia. Ad nulla iste odit repellendus distinctio fugit, porro reprehenderit nihil at debitis a, vero eius, totam consectetur.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eos quo enim laborum reiciendis. Perspiciatis voluptatem asperiores, sapiente possimus culpa eaque id repellendus?
+        </p>
+
+       
+    </div>
+
+    <div class="mycount">
+        I am another Container
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        .box::first-line{
+            color: yellowgreen;
+        }
+
+        .box::first-letter{
+            color: black;
+            font-size: 43px;
+        }
+
+        .boxes *{
+            border:2px solid red;
+        }
+
+        /* FOR ALL */
+        p,a,.box,[data-color="primary"]{
+            padding-top: 45px;
+        }
+
+        /* INSERT CONTENT WITH CSS */
+
+        .boxes::before{
+            content: "CODING WITH CHETAN";
+            color: blueviolet;
+
+        }
+
+        .boxes::after{
+            content: "CODING WITH CHETAN CK";
+            color: aqua;
+        }
+
+        /* WHEN WE CLICK ON IT COLOR WILL CHANGE */
+
+        ::selection{
+            color: yellow;
+            background-color: black;
+        }
+        
+        input::placeholder{
+            color:blue;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a Box Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloremque, dolorum perspiciatis autem cupiditate, repellendus id accusantium, odio quia voluptatem cumque est. Perferendis expedita vero hic ipsum quam id impedit. Accusamus non, deserunt omnis quaerat delectus magnam porro in nemo laudantium sequi deleniti enim optio facere facilis explicabo! Libero laborum distinctio praesentium quisquam.</div>
+
+        <div data-color="primary" class="box">Hey I am a Box</div>
+
+        <div class="box">Hey I am a Box</div>
+
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: black;
+            height: 80vh;
+
+
+            display: flex;
+            justify-content: center;
+            /* justify-content:space-between; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-wrap: wrap;  /* ADJUST YOURSELF*/
+            align-content: center;
+
+            /* flex-flow:  flex direction flex wrap; */
+            /* flex-flow: row wrap; */
+            gap:40px 10px;
+
+
+
+        }
+        .item{
+        /* Take a equally space in width using flex-grow */
+            flex-grow: 1; 
+            height: 93px;   
+            width: 93px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+        }
+        /* low order = come first & vice - versa */
+        .order-6{
+            order:6;
+        }
+
+        .order-2{
+            order:2;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item order-6">6</div>
+            <div class="item order-2">7</div>
+        </div>
+    </main>
+    
+</body>
+</html>

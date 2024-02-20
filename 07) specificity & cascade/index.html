@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Specificity of this selector is 1 (Element Selector) */
+        h1{
+            color: aqua;
+        }
+
+        /* The Specificity of this selector is 10 (Class Selector) */
+
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        /* Attribute Selector :10 */
+        [data-x=a]{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Class Selector -->
+        <h1 class="yellow  cred  cpurple"> Specificity</h1>
+        <!-- Attribute Selector -->
+        <h1 class="yellow  cred  cpurple" data-x="a">CSS Specificity</h1>
+        <!-- Inline Selector -->
+        <h1 style="color: aquamarine;"  class="yellow  cred  cpurple">CSS Specificity</h1>
+
+        <span style="color: rgb(212, 119, 42); font-size:small;">SPECIFICITY : Inline Selector(1000) > ID Selector (100) > Class or Attribute Selector (10) > Element Selector (1) > Universal Selector(0) </span>
+    </div>
+</body>
+</html>
